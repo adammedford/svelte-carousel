@@ -1,0 +1,17 @@
+{
+  "name": "amedford-svelte-carousel-base",
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "rollup": "^1.11.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-svelte": "^5.0.0",
+    "svelte": "^3.0.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "description": "",
+  "version": "0.0.1",
+  "author": "Adam Medford",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "web-component",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "amedford-svelte-carousel-base": "0.0.1"
+  },
+  "keywords": [],
+  "author": "Adam Medford",
+  "license": "ISC"
+}
