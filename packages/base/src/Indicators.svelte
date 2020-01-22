@@ -26,12 +26,34 @@
   .carousel-indicators button {
     background-color: transparent;
     border: none;
-    padding: 15px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
   }
 
-  .carousel-indicators .active {
-    color: blue !important;
+  .inner-button {
+    border: 1px solid #fff;
+    margin: 0 auto;
+    padding: 4px;
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+  }
+
+  .button-center {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+  }
+
+  .active .inner-button {
+    border: 1px solid blue !important;
+  }
+
+  .active .button-center {
+    background-color: blue !important;
   }
 </style>
 
@@ -42,7 +64,10 @@
       animate:flip={{ delay: 250, duration: 250, easing: quintOut }}
       on:click={jumpToIndex(i)}
       class:active={selectedIndex === i}>
-      O
+      <div class="inner-button">
+
+        <div class="button-center" />
+      </div>
     </button>
   {/each}
 </div>

@@ -1,6 +1,5 @@
 <script>
   import { onDestroy } from "svelte";
-  import Slide from "./Slide.svelte";
   import Indicators from "./Indicators.svelte";
   import { quintOut } from "svelte/easing";
   import { fly } from "svelte/transition";
@@ -155,7 +154,7 @@
     border: none;
     color: #fff;
     background-color: rgba(50, 50, 50, 0.5);
-    z-index: 99999;
+    z-index: 100;
     position: absolute;
   }
 
@@ -191,7 +190,7 @@
             class="slide-container slide-wrapper"
             out:fly={isReverse ? forwardAnimation : reverseAnimation}
             in:fly={isReverse ? reverseAnimation : forwardAnimation}>
-            <Slide {slide} />
+            {@html slide.content}
           </div>
         {/if}
       </div>
